@@ -29,15 +29,7 @@ class Commands:
         """Info about MiBot!"""
         embed = discord.Embed(title="MiBot", description="A Python Discord Bot", colour=0x1e90ff)
         await self.bot.say(embed=embed)
-
-    '''@commands.command(pass_context=True)
-    async def donate(self,ctx):
-        """Support DC Bot by donating to its developers"""
-        desc = "DC Bot is entierly ran of our own backs using our time and resources, concider donating to help pay for our servers and development. Thank you."
-        embed = discord.Embed(title="Donate to DC Bot", description=desc, colour=0x1e90ff)
-        embed.set_thumbnail(url="https://cdn.discordapp.com/avatars/210885581264125952/d16e3d9753f5f221a0a40fc1d7a67078.png?size=1024")
-        embed.add_field(name="Donate here", value="https://paypal.me/discordvulcan")
-        await self.bot.say (embed=embed)'''
+	
 		
 def setup(bot):
     bot.add_cog(Commands(bot))
