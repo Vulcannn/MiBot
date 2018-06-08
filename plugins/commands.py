@@ -10,13 +10,10 @@ class Commands:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(pass_context=True)
-    async def ping(self, ctx):
-        """Pong!"""
-        await self.bot.say('Pong!')
+
 
     @commands.command(pass_context=True)
-    async def pingtime(self,ctx):
+    async def ping(self,ctx):
         """Get your ping time!"""
         channel = ctx.message.channel
         t1 = time.perf_counter()
